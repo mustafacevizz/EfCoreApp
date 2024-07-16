@@ -1,0 +1,33 @@
+﻿@model Teacher
+<h2>Edit Teacher Information</h2>
+<hr />
+<div class="row">
+    <div class="col-8">
+
+        <form asp-controller="Teacher" asp-action="Edit" method="post">
+        <input type="hidden" asp-for="TeacherId" />
+        <div class="mb-3">
+            <label asp-for="TeacherName" class="form-label">Teacher Name</label>
+                <input asp-for="TeacherName" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="TeacherSurname" class="form-label">Teacher Surname</label>
+                <input asp-for="TeacherSurname" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="TeacherMail" class="form-label">Mail</label>
+                <input asp-for="TeacherMail" class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="TeacherPhone" class="form-label">Phone</label>
+                <input asp-for="TeacherPhone" class="form-control" />
+        </div>
+            <div class="mb-3">
+                <label asp-for="StartingDate" class="form-label">Starting Date</label>
+                <input asp-for="StartingDate" class="form-control" />
+            </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+    </div>
+    
+</div>
